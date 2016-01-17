@@ -1,0 +1,14 @@
+    digraph{
+    dpi=160
+    edge [fontname=Helvetica]
+    node [shape=record fontname=Helvetica]
+    ranksep=1.5
+    nodesep=1.5
+
+    blank1 [label="     " shape=none]
+    classe [label=<<b>Classe</b>>]
+    objet  [label=<<u>objet</u>>]
+    classe -> attribut [label=possède]
+    objet -> propriété [label=possède]
+    blank2 [label="     " shape=none]
+    }

@@ -1,0 +1,42 @@
+digraph{
+    rankdir= TB
+    dpi = 100
+    fontname=Helvetica
+    node [fontname=Helvetica shape=Mrecord]
+    edge [fontname=Helvetica]
+
+    subgraph cluster_0 {
+        label=<<b>Budgeter un projet</b><BR ALIGN="LEFT"/>>
+        labeljust=l
+        style=rounded
+
+        { rank=source
+            init0 [label="" shape=doublecircle style=filled fillcolor=black]
+            # init1 [label="" shape=doublecircle style=filled fillcolor=black]
+        }
+        final0 [label="" shape=doublecircle style=filled fillcolor=black]
+        # fina1l [label="" shape=doublecircle style=filled fillcolor=black]
+        # merge [label="" shape=diamond]
+        fork [fixedsize=true width=2 height=0.01 style=filled fillcolor=black shape=record label="<a>|<b>|<c>|<d>|<e>|<f>|<g>|<h>"]
+        join [fixedsize=true width=2 height=0.01 style=filled fillcolor=black shape=record label="<a>|<b>|<c>|<d>|<e>|<f>|<g>|<h>"]
+        # A1 [label="A" shape=circle]
+        # A2 [label="A" shape=circle]
+
+        A [label="Estimer les étapes"]
+        B [label="Budgeter les matières premières"]
+        C [label="Budgeter Main d'Œuvre"]
+        D [label="Estimer délai"]
+        E [label="Estimer Coût immobilisation"]
+        F [label="Sommer les coûts"]
+
+        init0 -> A -> fork
+        fork:b -> B
+        fork:c -> C
+        fork:d -> D -> E
+        E -> join:e:n
+        B -> join:b:n
+        C -> join:c:n
+        join -> F -> final0 []
+
+    }
+}

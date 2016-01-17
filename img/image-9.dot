@@ -1,0 +1,20 @@
+
+    digraph "classes_No_Name" {
+    charset="utf-8"
+    rankdir=BT
+    dpi=160
+    edge [fontname=Helvetica]
+    node [shape=record fontname=Helvetica]
+
+    "0" [label="NoneType", shape="record"];
+    "1" [label="bool", shape="record"];
+    "2" [label="complex", shape="record"];
+    "3" [label="float", shape="record"];
+    "4" [label="int", shape="record"];
+    "6" [label="object", shape="record"];
+    "0" -> "6" [arrowhead="empty", arrowtail="none"];
+    "1" -> "4" [arrowhead="empty", arrowtail="none"];
+    "2" -> "6" [arrowhead="empty", arrowtail="none"];
+    "3" -> "6" [arrowhead="empty", arrowtail="none"];
+    "4" -> "6" [arrowhead="empty", arrowtail="none"];
+    }

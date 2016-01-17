@@ -1,0 +1,11 @@
+digraph{
+    node [shape=record fontname=Helvetica]
+    edge [fontname=Helvetica]
+    dpi=160
+    ranksep=1.5
+    nodesep=1.5
+
+    b1 [label="" shape=none]
+    book [label=<{<b>Book</b>|+title: str<BR ALIGN="LEFT" />+author: str<BR ALIGN="LEFT" />|+borrow(Date): void<BR ALIGN="LEFT" /><U>+getCollection(Book): Book[*]</U>}>]
+    b2 [label="" shape=none]
+}

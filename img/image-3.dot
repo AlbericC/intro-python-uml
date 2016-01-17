@@ -1,0 +1,10 @@
+digraph{
+    dpi=160
+    edge [fontname=Helvetica]
+    node [shape=record fontname=Helvetica]
+ranksep=1.5
+nodesep=1.5
+bl1 [label="" shape=none]
+excl [ label=<{<b>Exemple</b>|-attributs-|-méthodes-}> ]
+bl2 [label="" shape=none]
+}

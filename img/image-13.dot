@@ -1,0 +1,19 @@
+digraph{
+    rankdir= LR
+    dpi = 100
+    fontname=Helvetica
+    node [fontname=Helvetica shape=Mrecord]
+    edge [fontname=Helvetica]
+
+    subgraph cluster_cuisiner {
+        label=<<b>cuisiner</b><BR ALIGN="LEFT"/>recette: Recette<BR ALIGN="LEFT"/>outillage: Ustensile>
+        labeljust=l
+        shape=Mrecord
+        style=rounded
+
+        reunir [label=<installer>]
+        prepar [label=<préparer>]
+        ranger [label=<ranger>]
+        reunir -> prepar -> ranger
+    }
+}

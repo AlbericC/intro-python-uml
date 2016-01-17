@@ -1,0 +1,12 @@
+digraph{
+    dpi=160
+    edge [fontname=Helvetica]
+    node [shape=record fontname=Helvetica]
+    ranksep=1.5
+    nodesep=1.5
+
+    b1 [label="" shape=none]
+    Database [label=<<b>Database</b>>]
+    db [label=<<u>client_21_postgresql_database:Database</u>>]
+    b2 [label="" shape=none]
+    }

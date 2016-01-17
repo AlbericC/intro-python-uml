@@ -1,0 +1,42 @@
+digraph{
+    rankdir= LR
+    dpi = 100
+    fontname=Helvetica
+    node [fontname=Helvetica shape=Mrecord]
+    edge [fontname=Helvetica arrowhead=vee]
+    nodesep=0.75
+
+    subgraph cluster_0 {
+        label=<
+        <TABLE BORDER="0" CELLBORDER="0">
+        <TR>
+        <TD ALIGN="LEFT"><b>Lire un nombre</b><BR ALIGN="LEFT"/></TD>
+        <TD ALIGN="CENTER" WIDTH="100"></TD>
+        <TD ALIGN="RIGHT"><b>&lt;&lt;precondition:&gt;&gt;</b>le fichier est ouvert<BR ALIGN="right"/></TD>
+        </TR></TABLE>
+                >
+        labeljust=l
+        style=rounded
+
+        { rank=source
+            # init0 [label="" shape=doublecircle style=filled fillcolor=black]
+            # init1 [label="" shape=doublecircle style=filled fillcolor=black]
+            }
+        { rank = sink
+            # final0 [label="" shape=doublecircle style=filled fillcolor=black]
+            # fina1l [label="" shape=doublecircle style=filled fillcolor=black]
+            }
+        # merge [label="" shape=diamond]
+        # fork [fixedsize=true width=2 height=0.01 style=filled fillcolor=black shape=record label="<a>|<b>|<c>|<d>|<e>"]
+        # join [fixedsize=true width=2 height=0.01 style=filled fillcolor=black shape=record label="<a>|<b>|<c>|<d>|<e>"]
+        # A1 [label="A" shape=circle]
+        # A2 [label="A" shape=circle]
+
+        {rank=min
+            }
+
+        Fichier [shape=box]
+        int [shape=box]
+        Fichier -> "lire une ligne" -> "convertir en nombre" -> int
+        }
+        }
