@@ -45,7 +45,6 @@ cours_info.pdf : $(IMGS) $(DOTS) $(MDS)
 # Pattern rules
 %.pdf : %.md
 	pandoc --smart --filter pandoc-citeproc -No $@ $<
-	$(MAKE) clean
 
 %.png : %.dot
 	dot -Tpng $< > $@
@@ -60,10 +59,4 @@ $(IMGDIR):
 
 .PHONY : clean
 clean:
-	rm -f image-[0-9]*.pdf
-	rm -f image-[0-9]*.dot
-	rm -f image-[0-9]*.png
-	rm -f image-[0-9]*.eps
-	rm -f image-[0-9]*.ditaa
-
-
+	rm -f img/image-*.png
