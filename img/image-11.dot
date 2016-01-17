@@ -1,0 +1,9 @@
+
+digraph{
+    rankdir= LR
+    dpi = 100
+    node [fontname=Helvetica]
+    edge [fontname=Helvetica]
+
+    Budgeter  [label=<<b>Budgeter</b><BR ALIGN="LEFT"/>budget: Montant> shape = Mrecord]
+}

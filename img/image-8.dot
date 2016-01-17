@@ -1,0 +1,25 @@
+digraph "classes_numbers" {
+charset="utf-8"
+rankdir=BT
+    dpi=160
+    edge [fontname=Helvetica]
+    node [shape=record fontname=Helvetica]
+
+"0" [label="Complex", shape="record"];
+"1" [label=<<I>Integral</I>>, shape="record"];
+"2" [label="NoneType", shape="record"];
+"3" [label=<<i>Number</i>>, shape="record"];
+"4" [label="Rational", shape="record"];
+"5" [label="Real", shape="record"];
+"6" [label="object", shape="record"];
+"int" [label="int", shape="record"];
+"bool" [label="bool", shape="record"];
+"0" -> "3" [arrowhead="empty", arrowtail="none"];
+"1" -> "4" [arrowhead="empty", arrowtail="none"];
+"2" -> "6" [arrowhead="empty", arrowtail="none"];
+"3" -> "6" [arrowhead="empty", arrowtail="none"];
+"4" -> "5" [arrowhead="empty", arrowtail="none"];
+"5" -> "0" [arrowhead="empty", arrowtail="none"];
+"int" -> "1"[arrowhead="empty", arrowtail="none"];
+"bool" -> "1"[arrowhead="empty", arrowtail="none"];
+}

@@ -1,0 +1,8 @@
+digraph{
+    rankdir= LR
+    dpi = 100
+    node [fontname=Helvetica]
+    edge [fontname=Helvetica]
+
+    cuisiner  [label=<<b>cuisiner</b><BR ALIGN="LEFT"/>recette: Recette<BR ALIGN="LEFT"/>outillage: Ustensile[*]> shape = Mrecord]
+}

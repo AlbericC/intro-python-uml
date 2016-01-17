@@ -1,0 +1,25 @@
+digraph{
+    rankdir= LR
+    dpi = 300
+    fontname=Helvetica
+    node [fontname=Helvetica shape=Mrecord]
+    edge [fontname=Helvetica]
+
+    subgraph cluster_0 {
+        label=<<b>Vérifier les doublons</b><BR ALIGN="LEFT"/>>
+        labeljust=l
+        style=rounded
+
+        # init [label="" shape=doublecircle style=filled fillcolor=black]
+        # final [label="" shape=doublecircle style=filled fillcolor=black]
+        # A1 [label="A" shape=circle]
+        # A2 [label="A" shape=circle]
+
+        A [label="Parcourir le dossier"]
+        B [label="Calculer une empreinte de fichier"]
+        C [shape=box label="Hash"]
+        D [label="Vérifier les doublons"]
+
+        A -> B -> C -> D
+    }
+}

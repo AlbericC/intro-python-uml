@@ -1,0 +1,28 @@
+digraph{
+    rankdir= TB
+    dpi = 100
+    fontname=Helvetica
+    ranksep=0.3
+    node [fontname=Helvetica shape=Mrecord]
+    edge [fontname=Helvetica]
+
+    subgraph cluster_cuisiner {
+        label=<<b>Trouver multiples</b><BR ALIGN="LEFT"/>facteurs: int[*]<BR ALIGN="LEFT"/>borne: int<BR ALIGN="LEFT"/>>
+        labeljust=l
+        style=rounded
+
+        init [label="" shape=doublecircle style=filled fillcolor=black]
+        final [label="" shape=doublecircle style=filled fillcolor=black]
+
+        gener [fontname=Courier label=<k for k in range(borne +1)>]
+        # test  [fontname=Courier label=<<b>tester</b><BR ALIGN="LEFT"/>si k a un facteur dans facteurs>]
+        somme [label="ajouter à la somme"]
+        merge [shape=diamond label=""]
+        facteurs [shape=box]
+
+        init -> facteurs -> merge
+        init -> gener -> merge
+        merge -> somme [label="[k a un facteur dans `facteurs`]"]
+        somme -> final
+    }
+}

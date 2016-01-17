@@ -1,0 +1,31 @@
+    digraph{
+    rankdir=LR
+    dpi=500
+    edge [fontname=Helvetica]
+    node [shape=record fontname=Helvetica]
+
+    edge [arrowhead=empty]
+    // specialization
+    Singe -> Animal [label = "généralisation"]
+
+    edge [arrowhead=vee style=dashed]
+    // dépendance
+    Telephone -> Chargeur [label="dépendance"]
+
+    edge [arrowhead=none style=solid]
+    // association, no direction
+    Voiture -> Conducteur [label="association (sans direction)"]
+
+    edge [arrowhead=vee]
+    // association ("has a")
+    Cours -> Evaluation [label=association]
+
+    edge [dir=both arrowhead=vee arrowtail=odiamond]
+    // aggregation ("owns a")
+    RendezVous -> Lieu [label="aggregation / possession"]
+    RendezVous -> Date
+
+    edge [dir=both arrowhead=vee arrowtail=diamond]
+    // composition ("is made of")
+    Polygone -> Sommet [label="composition / caractéristique essentielle"]
+    }

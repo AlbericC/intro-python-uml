@@ -1,0 +1,9 @@
+
+digraph{
+    rankdir= LR
+    dpi = 100
+    node [fontname=Helvetica]
+    edge [fontname=Helvetica]
+
+    truc   [label=<<b>Activité</b><BR ALIGN="LEFT"/>Paramètres> shape = Mrecord]
+}

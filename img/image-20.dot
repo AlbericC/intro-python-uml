@@ -1,0 +1,33 @@
+digraph{
+    rankdir= TB
+    dpi = 100
+    ranksep=0.1
+    nodesep=0.1
+    fontname=Helvetica
+    node [fontname=Helvetica shape=Mrecord]
+    edge [fontname=Helvetica]
+
+    subgraph cluster_0 {
+        label=<<b>Préparer un cours</b><BR ALIGN="LEFT"/>>
+        labeljust=l
+        style=rounded
+
+        { rank=source
+            init0 [label="" shape=doublecircle style=filled fillcolor=black]
+            init1 [label="" shape=doublecircle style=filled fillcolor=black]
+        }
+        final0 [label="" shape=doublecircle style=filled fillcolor=black]
+        merge [label="" shape=diamond]
+
+        init0 -> "Lister les objectifs"
+        init1 -> "Lister les compétences initiales"
+        {rank=same "Lister les objectifs" "Lister les compétences initiales" "lister les prérequis"}
+        "Lister les objectifs" -> "lister les prérequis"
+        {"Lister les compétences initiales" "lister les prérequis"} -> merge
+        merge -> "Lister les acquis" [label="[compétences à acquérir]"]
+        merge -> "Pas de cours" [label="[compétences acquises]"]
+
+        {"Lister les acquis" "Pas de cours"} -> final0
+
+    }
+}

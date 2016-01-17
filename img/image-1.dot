@@ -1,0 +1,10 @@
+    digraph{
+    dpi=160
+    edge [fontname=Helvetica]
+    node [shape=record fontname=Helvetica]
+    blank1 [label="     " shape=none]
+    Objet
+    Fait  [shape=Mrecord]
+    blank2 [label="     " shape=none]
+    }
+
