@@ -45,7 +45,7 @@ méthode :
 
 
 \label{attrib}
-La représentation des attributs est conçue pour permettre de les écrire sur une ligne, ce qui la rend très compacte mais malheureusement assez peu lisible. On y fait figurer dans cet ordre: \footnote{les termes utilisé dans cette description ne sont pas ceux de la norme}
+La représentation des attributs est conçue pour permettre de les écrire sur une ligne, ce qui la rend très compacte mais malheureusement assez peu lisible. On y fait figurer dans cet ordre:^[les termes utilisé dans cette description ne sont pas ceux de la norme]
 \small
 
 ~~~
