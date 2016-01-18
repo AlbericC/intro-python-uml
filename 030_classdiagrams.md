@@ -142,14 +142,11 @@ Types spéciaux de classes
 
 ### Classe abstraite
 
-Les classes abstraites décrivent des caractéristiques, par exemple des attributs ou méthodes, mais ne fournit pas d'implémentation pour celles-ci. Ce sont les sous-classes qui en fournissent les implémentations. Les classes abstraites n'ont donc pas d'instances hormis celles de leurs sous-classes.[^abc]
+Les classes abstraites décrivent des caractéristiques, par exemple des attributs ou méthodes, mais ne fournit pas d'implémentation pour celles-ci. Ce sont les sous-classes qui en fournissent les implémentations. Les classes abstraites n'ont donc pas d'instances hormis celles de leurs sous-classes. Python propose une implémentation des classes abstraites avec le module [`abc - Abstract Base Classes`][] (voir [@py3doc], sec. 29.7)
 
 On indique une classe abstraite par son nom, qui est en italique dans le *classifier*.
 
 ![Une classe abstraite spécifiant des attributs et méthodes pour ses descendants](img/image-7.png)
-
-
-[^abc]: python propose une implémentation des classes abstraites avec le module [`abc - Abstract Base Classes`][] (voir [@py3doc], sec. 29.7)
 
 [`abc - Abstract Base Classes`]: https://docs.python.org/3/library/abc.html#module-abc
 
