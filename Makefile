@@ -1,6 +1,6 @@
 IMGDIR := img
 
-IMGS := $(addprefix $(IMGDIR)/,assoq_qualif.pdf interface_1.pdf interface_2.pdf bicyclette.png bicyclette_schema_cyn_deux_ponct.png bicyclette_schema_cyn.png classasso.png template.png)
+IMGS := $(addprefix $(IMGDIR)/,assoq_qualif.pdf flow_final.pdf interface_1.pdf interface_2.pdf bicyclette.png bicyclette_schema_cyn_deux_ponct.png bicyclette_schema_cyn.png classasso.png template.png)
 
 DOTS := $(addprefix $(IMGDIR)/,image-10.png\
 		image-11.png\
