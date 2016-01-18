@@ -145,6 +145,23 @@ Cela dépasse le cadre de ce document, mais il est possible de regrouper des por
 Liens pour se documenter
 ------------------------
 
-<!--TODO penser à inclure eevee.org -->
+Eevee
+:   [Eevee](http://eev.ee/) (anglais) est un développeur expert sur plusieurs langages. Si l'univers et la sensibilité de Eevee sont déconcertantes, les contributions qu'il fournit à l'écosystème python sont remarquables, notamment [camel](http://eev.ee/blog/2015/10/15/dont-use-pickle-use-camel/), et les explications et regards qu'il donne sur l'informatique sont riches de recul. On peut en particulier consulter son article ["Next steps for beginning programmers"](http://eev.ee/blog/2015/10/10/next-steps-for-beginning-programmers/) qui donne quelques pistes pour se faire une culture de programmeur.
 
-\newpage
+
+Sam & Max
+:   [Sam & Max](http://sametmax.com/) sont deux développeurs anonymes spécialisés en python, qui ont décidé de tenir une veille technique sur python, de partager leur savoirs et savoirs-faire, en les vulgarisant raisonnablement.[Leur résumé de la PEP8 est particulièrement utile](http://sametmax.com/le-pep8-en-resume/). **Attention** le sous-titre de ce blog est "Du code, du cul", et il contient ***systématiquement*** des images explicites dans tous les articles. Il n'est pas conseillé de le consulter au travail ! (les raisons de ce choix sont présentées sur [une page du site](http://sametmax.com/pouvez-vous-separer-le-cul-de-la-programmation-svp/))
+
+Les documentatiosn officielles
+:   [La documentation officielle python](https://docs.python.org/3/) reste dans l'immense majorité des cas la première et la meilleure source d'informations pour se dépanner.
+
+Les conférences de Raymond Hettinger
+:   [Raymond Hettinger](https://www.youtube.com/results?search_query=raymond%20hettinger%20class%20python) est un des contributeurs au langage python lui-même, et est à l'origine de plusieurs des améliorations qui ont conduit à python 3. En marge de son activité de consultant programmeur, il donne des conférences de grande qualité sur des fondamentaux du langage.
+
+Informations à éviter
+---------------------
+
+Comme Internet est parfois peu fiable, quelques sites sont notoirement une mauvaise source d'information pour se documenter au sujet de python.
+
+*   Le site / livre "Learn Python The Hard Way" (parfois référencé LPTHW) est hors d'âge, et mal construit. Tout conseil s'appuyant sur ce livre est à prendre avec *beaucoup* de prudence.
+*   StackOverflow est un site d'entraide sur les sujets informatiques. La communauté python de ce site est issue d'autres langages, et ne propose pratiquement jamais de solutions "pythonesques" mais des transpositions de constructions courantes dans d'autres langages. Ces solutions sont toujours médiocres, il faut y préférer les solutions natives de python.
