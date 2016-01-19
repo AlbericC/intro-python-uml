@@ -1,7 +1,7 @@
 digraph "classes_numbers" {
 charset="utf-8"
 rankdir=BT
-    dpi=160
+    dpi=300
     edge [fontname=Helvetica]
     node [shape=record fontname=Helvetica]
 

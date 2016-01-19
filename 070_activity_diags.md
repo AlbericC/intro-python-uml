@@ -126,7 +126,7 @@ Représenté par un cercle noirci doublé, il interrompt toute execution dans l'
 
 #### Nœud de fin de flux
 
-![Nœud de fin de flux](img/flow_final_node.png)
+![Nœud de fin de flux](img/flow_final.pdf)
 
 N'interrompt qu'une "ligne" d'actions sans interrompre toutes les actions de l'activité
 

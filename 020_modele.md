@@ -43,7 +43,7 @@ Obtenir un modèle qui remplit effectivement sa fonction demande de procéder av
 Domaine de validité du modèle:
 :   Chaque modèle est construit pour répondre à une problématique ou une famille de problématiques. Les limites de ce domaine où le modèle donne des résultats fidèles à la réalité sont la frontière de son *domaine de validité*. Il est donc important d'identifier ces limites, sous la forme de cas admissibles et non admissibles pour le modèle par exemple, ou de plages de valeurs où un modèle alternatif peut être substitué.
 
-    On peut par exemple considérer les différents modèles de la gravité et de l'espace-temps. À des vitesses suffisamment faibles, la mécanique Newtonienne suffit dans l'immense majorité des cas ; alors que pour un corps à grande vitesse (comparable à la vitesse de la lumière) la relativité restreinte sera d'usage. Enfin pour certains cas ou plusieurs corps évoluent à des vitesses relatives importantes entre eux, la relativité générale sera utilisée\footnote{Le cas de la synchronisation des satellites GPS en est une application célèbre}.
+    On peut par exemple considérer les différents modèles de la gravité et de l'espace-temps. À des vitesses suffisamment faibles, la mécanique Newtonienne suffit dans l'immense majorité des cas ; alors que pour un corps à grande vitesse (comparable à la vitesse de la lumière) la relativité restreinte sera d'usage. Enfin pour certains cas ou plusieurs corps évoluent à des vitesses relatives importantes entre eux, la relativité générale sera utilisée^[Le cas de la synchronisation des satellites GPS en est une application célèbre].
 
 Tenir compte de ces aspects tout au long de la modélisation permet au final de savoir à quelles questions le modèle permet (ou ne permet pas) de répondre.
 

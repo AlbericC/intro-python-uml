@@ -1,6 +1,7 @@
 digraph{
     rankdir= TB
-    dpi = 100
+    dpi = 350
+    size = "5,5"
     fontname=Helvetica
     node [fontname=Helvetica shape=Mrecord]
     edge [fontname=Helvetica]

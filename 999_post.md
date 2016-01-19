@@ -1,2 +1,3 @@
-Références utiles
-=================
+\newpage
+Références
+==========

@@ -109,7 +109,30 @@ Au cours de votre parcours avec python (et peut-être avec d'autres langages), j
 >
 > \hfill Martin Golding
 
-Martin Golding ne parle pas au hasard : ce "*guy*" sera probablement vous, quelques mois ou années dans le futur. L'expérience montre que bien souvent, les codes écrits sans considération pour le futur lecteur ou le mainteneur causent une frustration extrême, et souvent à terme, leur abandon. À titre d'illustration, j'ai récemment relu un de mes codes anciens où le commentaire suivant se trouvait: `# Dear future self, sorry. I wrote this yesterday and it seems to work, yet I don't known why. You'll have to recode all this.`
+Martin Golding ne parle pas au hasard : ce "*guy*" sera probablement vous, quelques mois ou années dans le futur. L'expérience montre que bien souvent, les codes écrits sans considération pour le futur lecteur ou le mainteneur causent une frustration extrême, et souvent à terme, leur abandon.
+
+Un code correctement documenté contient\ : des *docstrings* à l'entrée des fonctions, si leur usage n'est pas absolument évident, et des commentaires quand l'algorithme n'est pas simple à lire, pour faciliter sa compréhension et sa modification à l'avenir[^tpsprog].
+
+Le code est suffisamment documenté si sa lecture et la compréhension de son rôle est simple (elle se fait presque aussi rapidement que la lecture d'un texte --pour un lecteur connaissant le langage, bien sûr).
+
+~~~ python
+# Exemple de fonction correctement documentée
+# Extrait du code source de S-M boards : github.com/AlbericC/S-Mboards/
+def fetch_url(url, bytes=10000, retry=3):
+    """ Returns the bytes of the ressource at this URL"""
+    retry = abs(retry or 1)
+    for x in range(retry - 1):
+        try:  # retry silently several time
+            page = urllib.urlopen(url)
+            return page.read(10000)
+        except:
+            pass
+    # try one last time and fail loudly if needed
+    page = urllib.urlopen(url)
+    return page.read(10000)
+~~~
+
+[^tpsprog]: On estime souvent que le temps passé sur un code est à $2\over3$ passé à maintenir et corriger le code. C'est donc un gain de temps à moyen terme de faciliter ces tâches, en commentant utilement et raisonnablement le code source.
 
 Respectez les conventions de commentaire, incluez des docstrings, vous réduirez votre effort futur pour l'entretien de votre projet.
 
@@ -145,6 +168,23 @@ Cela dépasse le cadre de ce document, mais il est possible de regrouper des por
 Liens pour se documenter
 ------------------------
 
-<!--TODO penser à inclure eevee.org -->
+Eevee
+:   [Eevee](http://eev.ee/) (anglais) est un développeur expert sur plusieurs langages. Si l'univers et la sensibilité de Eevee sont déconcertantes, les contributions qu'il fournit à l'écosystème python sont remarquables, notamment [camel](http://eev.ee/blog/2015/10/15/dont-use-pickle-use-camel/), et les explications et regards qu'il donne sur l'informatique sont riches de recul. On peut en particulier consulter son article ["Next steps for beginning programmers"](http://eev.ee/blog/2015/10/10/next-steps-for-beginning-programmers/) qui donne quelques pistes pour se faire une culture de programmeur.
 
-\newpage
+
+Sam & Max
+:   [Sam & Max](http://sametmax.com/) sont deux développeurs anonymes spécialisés en python, qui ont décidé de tenir une veille technique sur python, de partager leur savoirs et savoirs-faire, en les vulgarisant raisonnablement.[Leur résumé de la PEP8 est particulièrement utile](http://sametmax.com/le-pep8-en-resume/). **Attention** le sous-titre de ce blog est "Du code, du cul", et il contient ***systématiquement*** des images explicites dans tous les articles. Il n'est pas conseillé de le consulter au travail ! (les raisons de ce choix sont présentées sur [une page du site](http://sametmax.com/pouvez-vous-separer-le-cul-de-la-programmation-svp/))
+
+Les documentatiosn officielles
+:   [La documentation officielle python](https://docs.python.org/3/) reste dans l'immense majorité des cas la première et la meilleure source d'informations pour se dépanner.
+
+Les conférences de Raymond Hettinger
+:   [Raymond Hettinger](https://www.youtube.com/results?search_query=raymond%20hettinger%20class%20python) est un des contributeurs au langage python lui-même, et est à l'origine de plusieurs des améliorations qui ont conduit à python 3. En marge de son activité de consultant programmeur, il donne des conférences de grande qualité sur des fondamentaux du langage.
+
+Informations à éviter
+---------------------
+
+Comme Internet est parfois peu fiable, quelques sites sont notoirement une mauvaise source d'information pour se documenter au sujet de python.
+
+*   Le site / livre "Learn Python The Hard Way" (parfois référencé LPTHW) est hors d'âge, et mal construit. Tout conseil s'appuyant sur ce livre est à prendre avec *beaucoup* de prudence.
+*   StackOverflow est un site d'entraide sur les sujets informatiques. La communauté python de ce site est issue d'autres langages, et ne propose pratiquement jamais de solutions "pythonesques" mais des transpositions de constructions courantes dans d'autres langages. Ces solutions sont toujours médiocres, il faut y préférer les solutions natives de python.
