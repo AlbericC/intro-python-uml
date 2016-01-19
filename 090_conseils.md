@@ -109,7 +109,30 @@ Au cours de votre parcours avec python (et peut-être avec d'autres langages), j
 >
 > \hfill Martin Golding
 
-Martin Golding ne parle pas au hasard : ce "*guy*" sera probablement vous, quelques mois ou années dans le futur. L'expérience montre que bien souvent, les codes écrits sans considération pour le futur lecteur ou le mainteneur causent une frustration extrême, et souvent à terme, leur abandon. À titre d'illustration, j'ai récemment relu un de mes codes anciens où le commentaire suivant se trouvait: `# Dear future self, sorry. I wrote this yesterday and it seems to work, yet I don't known why. You'll have to recode all this.`
+Martin Golding ne parle pas au hasard : ce "*guy*" sera probablement vous, quelques mois ou années dans le futur. L'expérience montre que bien souvent, les codes écrits sans considération pour le futur lecteur ou le mainteneur causent une frustration extrême, et souvent à terme, leur abandon.
+
+Un code correctement documenté contient\ : des *docstrings* à l'entrée des fonctions, si leur usage n'est pas absolument évident, et des commentaires quand l'algorithme n'est pas simple à lire, pour faciliter sa compréhension et sa modification à l'avenir[^tpsprog].
+
+Le code est suffisamment documenté si sa lecture et la compréhension de son rôle est simple (elle se fait presque aussi rapidement que la lecture d'un texte --pour un lecteur connaissant le langage, bien sûr).
+
+~~~ python
+# Exemple de fonction correctement documentée
+# Extrait du code source de S-M boards : github.com/AlbericC/S-Mboards/
+def fetch_url(url, bytes=10000, retry=3):
+    """ Returns the bytes of the ressource at this URL"""
+    retry = abs(retry or 1)
+    for x in range(retry - 1):
+        try:  # retry silently several time
+            page = urllib.urlopen(url)
+            return page.read(10000)
+        except:
+            pass
+    # try one last time and fail loudly if needed
+    page = urllib.urlopen(url)
+    return page.read(10000)
+~~~
+
+[^tpsprog]: On estime souvent que le temps passé sur un code est à $2\over3$ passé à maintenir et corriger le code. C'est donc un gain de temps à moyen terme de faciliter ces tâches, en commentant utilement et raisonnablement le code source.
 
 Respectez les conventions de commentaire, incluez des docstrings, vous réduirez votre effort futur pour l'entretien de votre projet.
 
