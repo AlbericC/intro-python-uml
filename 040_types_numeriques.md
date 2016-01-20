@@ -49,7 +49,7 @@ Illimités en valeur, dans la limite de la mémoire disponible ($2^{31}$ ou $2^{
 float, type de base pour tous les réels
 ---------------------------------------
 
-Nombres 'à virgule flottante' réels, dans la limite de la précision de la machine. Admettent les opérations usuelles. (évidemment les opérations de décalage bit-à-bit ne sont pas disponibles).
+Nombres 'à virgule flottante' réels, dans la limite de la précision de la machine. Admettent les opérations usuelles. (évidemment les opérations de décalage bit-à-bit ne sont pas disponibles). Notez que les opérations `//`, `%`, etc. existent, mais produisent des réels arrondis.
 
 complex, type des nombres complexes
 -----------------------------------
