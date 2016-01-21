@@ -59,4 +59,4 @@ $(IMGDIR):
 
 .PHONY : clean
 clean:
-	rm -f img/image-*.png
+	rm -f $(DOTS)
