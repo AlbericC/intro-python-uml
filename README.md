@@ -26,3 +26,7 @@ Compiler le pdf se fait ensuite avec
 
 *J'utilise git-flow pour essayer de garder le log git sensé, merci de ne pousser que sur `develop`*
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/AlbericC/intro-python-uml/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
