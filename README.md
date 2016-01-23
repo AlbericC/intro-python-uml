@@ -1,3 +1,5 @@
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/AlbericC/intro-python-uml/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
 # Intro à python 3 et UML 2
 
 Ce dépôt contient les sources (pandoc markdown) et le Makefile pour compiler un cours d'introduction à la programmation.
@@ -28,5 +30,4 @@ Compiler le pdf se fait ensuite avec
 
 
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/AlbericC/intro-python-uml/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
