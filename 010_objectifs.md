@@ -10,11 +10,6 @@ Les objectifs de la formation sont répartis en trois thèmes :
     - Je suis capable d'identifier les limites et les paramètres d'un modèle
     - Je suis capable de lire un modèle construit avec UML
     - Je suis capable de construire et justifier de modèles modérément complexes construits en UML
-- Extraire & manipuler des données techniques
-    - Je suis capable de lire un modèle relationnel pour identifier les données
-    - Je suis capable d'extraire, modifier, mettre à jour ou supprimer des données
-    - Je suis capable de construire une requête adaptée à un questionnement
-    - Je suis capable de distinguer données & information.
 - Transcrire un modèle en simulation fonctionnelle
     - Je suis capable de mettre en correspondance un modèle UML avec un code source
     - Je suis capable de programmer un code fonctionnel simple
@@ -38,26 +33,6 @@ Je suis capable de lire un modèle construit avec UML
 
 Je suis capable de construire et justifier...
 :   Cette compétence est attendue à un niveau de communication et d'utilisation d'un outil. On ne vise pas à atteindre une perfection, des erreurs peuvent exister. Cependant, l'objectif premier est d'être capable de construire des modèles peu détaillés\footnote{typiquement de 5 à 10 classes pour un diagramme de classes} et de s'assurer de leur pertinence en justifiant les choix faits durant leur création, ou les raisons pour lesquelles il répondent aux problématiques posées.
-
-Détail des compétences visées : Thème de la gestion des données [^rembdd]
----------------------------------------------------------------
-
-[^rembdd]: Suite à une évolution imprévue de l'équipe de formateurs, les objectifs de cette partie sont largement non traités. Toutefois, il continuent de figurer à ce document dans sa version actuelle, car ils sont transversaux et pour partie abordés dans les enseignements dispensés hors du thème "bases de données".
-
-Ce thème est essentiellement axé autour des bases de données et de la méthode Merise, qui permet de s'assurer du sens des informations dans un S.I.
-
-
-Je suis capable de lire un modèle relationnel...
-:   Il s'agit de la transcription des compétences acquises en Travaux Dirigés. En analysant une structure de données avec les notions apprises au travers de Merise, il est possible (et demandé) de comprendre un modèle relationnel de base de données.
-
-Je suis capable d'extraire, modifier...
-:   Les quatre opérations de CRUD sont demandées dans cette compétences, ce qui impose de connaître les rudiments de la syntaxe SQL. En complément, quelques manipulations spécifiques au logiciel utilisé en TD peuvent être demandées.
-
-Je suis capable de construire une requête...
-:   Cette compétence demande de traduire le questionnement en critères selon les entrées de la BDD, puis de les combiner dans une syntaxe SQL correcte. L'exactitude de la réponse dépendant de la fiabilité de cette démarche, un niveau suffisant est nécessaire pour assurer la démarche en cadre professionnel.
-
-Je suis capable de distinguer données & information.
-:   Il est essentiel et impératif que les données ne soient jamais confondues avec le sens qu'elles portent, ou l'information qu'elles représentent. Cette compétence est suffisamment transversale pour être évaluée sur plusieurs critères hors du thème de la gestion des données, par exemple au travers du choix correct des types dans un modèle ou un programme.
 
 Détail des compétences visées : Thème de la programmation
 ---------------------------------------------------------
