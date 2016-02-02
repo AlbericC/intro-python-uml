@@ -28,6 +28,9 @@ Compiler le pdf se fait ensuite avec
 
 *J'utilise git-flow pour essayer de garder le log git sensé, merci de ne pousser que sur `develop`*
 
+# Roadmap / todo-list
 
+-   Inclure les méthodes les plus courantes et/ou utiles de `str`.
+-   Créer un exemple de résolution de problème.
 
 
