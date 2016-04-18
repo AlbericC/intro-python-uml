@@ -35,6 +35,7 @@ MDS := 000_pre.md \
 	065_flow_control_py.md \
 	070_activity_diags.md \
 	080_classes_py.md \
+	085_import_py.md \
 	090_conseils.md \
 	999_post.md
 
